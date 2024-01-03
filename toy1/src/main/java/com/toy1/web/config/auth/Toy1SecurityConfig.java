@@ -42,12 +42,13 @@ public class Toy1SecurityConfig {
 				.anyRequest().permitAll())
 			
 			
-			.formLogin(form -> form.loginPage("/user/login")
-						.defaultSuccessUrl("/member/index"))
-			
-			.logout(logout -> logout.logoutUrl("/user/logout")
-						.logoutSuccessUrl("/"))
-			
+			.formLogin(form -> form.
+				loginPage("/user/login")
+				.defaultSuccessUrl("/member/index"))
+			.logout(logout -> logout
+				.logoutUrl("/user/logout")
+				.logoutSuccessUrl("/"))
+
 			.exceptionHandling(exceptions -> exceptions.accessDeniedPage("/"));
 
 		return http.build();
