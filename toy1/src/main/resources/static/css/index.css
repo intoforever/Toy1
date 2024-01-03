@@ -1,0 +1,11 @@
+.member{
+    color: var(--color-main-1);
+}
+
+.vip-member{
+    color: var(--color-main-3);
+}
+
+.user{
+    color: var(--color-main-4);
+}
