@@ -12,7 +12,7 @@ import com.toy1.web.entity.PrimaryKeys;
 @Repository
 public interface MemberRoleRepository extends JpaRepository<MemberRole, PrimaryKeys> {
 
-	List<MemberRoleView> findAllByMemberId(Long id);
+	List<MemberRoleView> findAllByPrimaryKeyMemberId(Long memberId);
 	
 //	@Query(value = "SELECT " +
 //            "mr.member_id, " +

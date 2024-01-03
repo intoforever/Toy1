@@ -34,7 +34,7 @@ public class Toy1UserDetailsService implements UserDetailsService {
 		//로그인 아이디로 member 객체 만들고 권한 정보 얻어오기
 		Optional<Member> optionalMember = memberRepository.findByUsername(username);
 		Member member = optionalMember.orElseThrow(() -> new NoSuchElementException("Member not found"));		
-		List<MemberRoleView> memberRoleList = roleRepository.findAllByMemberId(member.getId());
+		List<MemberRoleView> memberRoleList = roleRepository.findAllByPrimaryKeyMemberId(member.getId());
 		
 		
 		//UserDetails 객체 생성해서 setter로 로그인 아이디로 만든 member 객체값 저장
