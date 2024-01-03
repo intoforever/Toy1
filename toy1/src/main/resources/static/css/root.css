@@ -1,0 +1,79 @@
+:root {
+  /* ========== color main palette ===========  */
+  --color-main-1: #e40000;
+  --color-main-2: #ffd336;
+  --color-main-3: #069f0a;
+  --color-main-4: #4e4bdd;
+  --color-main-5: #850eae;
+  --color-main-6: #212af8;
+
+
+  /* ========== color base palette ========== */
+  --color-base-1: #e5e5e5;
+  --color-base-2: #f5f5f5;
+  --color-base-3: #f0f0f0;
+  --color-base-4: #ececec;
+  --color-base-5: #bfbcbc;
+  --color-base-6: #828282;
+  --color-base-7: #606060;
+
+  /* ========== color black & white palette ========== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ========== page-blur palette ========== */
+  --page-blur-1: rgba(217, 217, 217, 0.5);
+
+  /* ========== color font ========== */
+  --color-font-1: #333333;
+  --color-font-2: #828282;
+
+  /* ========== color line ========== */
+  --color-line-1: #a7a7a7;
+
+  /* ========== radius size ========== */
+  --radius-size-5: 5px;
+  --radius-size-8: 8px;
+  --radius-size-10: 10px;
+  --radius-size-15: 15px;
+  --radius-size-20: 20px;
+  --radius-size-30: 30px;
+  --radius-size-50: 50px;
+
+  /* ========== font size ========== */
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+
+  /* ========== icon size ========== */
+  --icon-size-6: 6px;
+  --icon-size-12: 12px;
+  --icon-size-15: 15px;
+  --icon-size-17: 17px;
+  --icon-size-18: 18px;
+  --icon-size-19: 19px;
+  --icon-size-20: 20px;
+  --icon-size-22: 22px;
+  --icon-size-24: 24px;
+  --icon-size-26: 26px;
+  --icon-size-28: 28px;
+  --icon-size-29: 29px;
+  --icon-size-30: 30px;
+  --icon-size-32: 32px;
+  --icon-size-36: 36px;
+  --icon-size-40: 40px;
+  --icon-size-80: 80px;
+  --icon-size-100: 100px;
+  --icon-size-220: 220px;
+
+  /* ========== Logo icon size ========== */
+  --logo-size-24: 24px;
+  --logo-size-70: 70px;
+  --logo-size-88: 88px;
+  --logo-size-189: 189px;
+}
