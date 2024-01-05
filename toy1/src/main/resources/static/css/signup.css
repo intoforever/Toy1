@@ -5,21 +5,31 @@ section{
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto 0 auto;
 }
 
+h1{
+    font-size: var(--font-size-20);
+    font-weight: bold;
+}
+
+/* ------- form-section ------- */
 form{
     /* background-color: blue; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+}
+
+form label{
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
 }
 
 form input{
-    width: 100%;
-    min-width: 250px;
     height: 30px;
     margin-top: 20px;
     border-bottom: 1px solid var(--color-base-5);
@@ -28,4 +38,31 @@ form input{
 form input::placeholder{
     color: var(--color-base-5);
     font-size: var(--font-size-14) !important;
+}
+
+form .key-button{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--color-main-4);
+    border-radius: var(--radius-size-15);
+    background-color: transparent;
+
+    /* font */
+    font-size: var(--font-size-12);
+    font-weight: bold;
+    color: var(--color-main-4);
+}
+
+
+form .submit-button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-main-4);
+    border: none;
+    border-radius: var(--radius-size-10);
+
+    /* font */
+    font-weight: bold;
+    color: var(--color-white);
 }
