@@ -17,6 +17,7 @@ public class Toy1SecurityConfig {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		PasswordEncoder encoder = new BCryptPasswordEncoder();
+		System.out.println(encoder.encode("1234")); //gaga 비밀번호
 		return encoder;
 	}//passwordEncoder ends
 	
@@ -27,7 +28,7 @@ public class Toy1SecurityConfig {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 		http
-			//.csrf(csrf -> csrf.disable())
+			.csrf(csrf -> csrf.disable())
 			
 			.authorizeHttpRequests(authorize -> authorize
 				.requestMatchers("/admin/**")
@@ -41,9 +42,8 @@ public class Toy1SecurityConfig {
 					
 				.anyRequest().permitAll())
 			
-			
-			.formLogin(form -> form.
-				loginPage("/user/login")
+			.formLogin(form -> form
+				.loginPage("/user/login")
 				.defaultSuccessUrl("/member/index"))
 			.logout(logout -> logout
 				.logoutUrl("/user/logout")
