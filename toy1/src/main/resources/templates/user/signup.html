@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/root.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/util/box.css" rel="stylesheet" type="text/css" />
+    <link href="/css/util/content.css" rel="stylesheet" type="text/css" />
+    <link href="/css/util/form.css" rel="stylesheet" type="text/css" />
+    <link href="/css/util/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/css/signup.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <section>
+        <h1>회원가입</h1>
+        <form action="signup" method="post">
+            <label class="d:flex flex:col">
+                아이디
+                <input type="text" placeholder="아이디" name="username" required>
+            </label>
+            <label class="d:flex flex:col">
+                비밀번호
+                <input type="password" placeholder="비밀번호" name="password" required>
+            </label>
+            <label class="d:flex flex:col">
+                비밀번호 확인
+                <input type="password" placeholder="비밀번호 확인" required>
+            </label>
+            <label class="d:flex flex:col">
+                닉네임
+                <input type="text" placeholder="닉네임" name="nickname" required>
+            </label>
+            <div class="d:inline-flex">
+                <label class="d:flex flex:col">
+                    이메일
+                    <input type="email" placeholder="이메일 주소" name="email" required>
+                </label>
+                <button class="align-self:flex-end">인증번호 전송</button>
+            </div>
+            <label class="d:flex flex:col">
+                인증번호
+                <input type="text" placeholder="인증번호 입력" required>
+            </label>
+            <button>회원가입</button>
+        </form>
+    </section>
+</body>
+</html>

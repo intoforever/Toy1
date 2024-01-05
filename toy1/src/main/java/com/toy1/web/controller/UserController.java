@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("user")
 public class UserController {
 
 	//1. 로그인(GET)
@@ -13,7 +13,6 @@ public class UserController {
 	public String login() {
 		return "user/login";
 	}
-
 	
 	//2. 회원가입(GET)
 	@GetMapping("signup")
