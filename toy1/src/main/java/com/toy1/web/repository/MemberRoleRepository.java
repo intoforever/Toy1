@@ -9,4 +9,4 @@ import com.toy1.web.entity.PrimaryKeys;
 @Repository
 public interface MemberRoleRepository extends JpaRepository<MemberRole, PrimaryKeys>{
 
-}//class ends
+}

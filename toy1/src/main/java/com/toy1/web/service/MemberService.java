@@ -8,4 +8,4 @@ public interface MemberService {
 	//회원등록
 	void regMember(Member member);
 	
-}//class ends
+}//interface ends

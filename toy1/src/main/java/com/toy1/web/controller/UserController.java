@@ -23,19 +23,19 @@ public class UserController {
 
 	/* ===== Methods ===== */
 	
-	//1. 로그인(GET)
+	// 1. 로그인(GET)
 	@GetMapping("login")
 	public String login() {
 		return "user/login";
 	}
 	
-	//2. 회원가입(GET)
+	// 2. 회원가입(GET)
 	@GetMapping("signup")
 	public String signup() {
 		return "user/signup";
 	}
 	
-	//3. 회원가입(POST)
+	// 3. 회원가입(POST)
 	@PostMapping("signup")
 	public String form(
 			@RequestParam String username, @RequestParam String password,
@@ -55,5 +55,6 @@ public class UserController {
 		//회원가입 후 로그인 페이지로
 		return "redirect:/user/login";
 	}
+
 	
 }//class ends

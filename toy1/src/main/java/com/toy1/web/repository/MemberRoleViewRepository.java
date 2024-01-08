@@ -13,4 +13,4 @@ public interface MemberRoleViewRepository extends JpaRepository<MemberRoleView, 
 
 	List<MemberRoleView> findAllByPrimaryKeyMemberId(Long memberId);
 
-}//class ends
+}

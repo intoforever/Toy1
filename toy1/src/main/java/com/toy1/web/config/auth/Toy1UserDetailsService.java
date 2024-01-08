@@ -46,7 +46,7 @@ public class Toy1UserDetailsService implements UserDetailsService {
 		
 		
 		//Spring Authority에 로그인 아이디가 가진 권한 정보 저장하기
-		//반드시 롤네임은 ROLE_형태이어야 함
+		//반드시 롤네임은 "ROLE_(대문자)MEMBER"와 같은 형태이어야 함
 		List<GrantedAuthority> authorities = new ArrayList<>();
 		for (MemberRoleView mr : memberRoleList) {
 			authorities.add(new SimpleGrantedAuthority(mr.getRoleName()));
