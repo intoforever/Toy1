@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 import com.toy1.web.entity.Member;
 import com.toy1.web.entity.MemberRoleView;
 import com.toy1.web.repository.MemberRepository;
-import com.toy1.web.repository.MemberRoleRepository;
+import com.toy1.web.repository.MemberRoleViewRepository;
 
 @Service
 public class Toy1UserDetailsService implements UserDetailsService {
@@ -25,7 +25,7 @@ public class Toy1UserDetailsService implements UserDetailsService {
 	private MemberRepository memberRepository;
 	
 	@Autowired
-	private MemberRoleRepository roleRepository;
+	private MemberRoleViewRepository roleRepository;
 	
 
 	@Override
